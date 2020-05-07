@@ -1,0 +1,26 @@
+#bt{
+
+    background: #FFFFFF;
+    border: 3px solid #2B2A32;
+    box-sizing: border-box;
+    border-radius: 39px;
+    padding:2px;
+    padding-top: 1px;
+    margin-left: 20px;
+
+}
+
+#in{
+    padding-left: 500px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 570px) {
+    .navOptions {
+      display: none;
+    }
+    .menuIcon {
+      display: block;
+    }
+  }

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: events-container-deployment
+spec:
+  selector:
+    matchLabels:
+      app: events-container
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: events-container
+    spec:
+      containers:
+        - image: "utkarsha20/events-container"
+          imagePullPolicy: Always
+          name: events-container
+          ports:
+            - containerPort: 8083
+          resources:
+            limits:
+                cpu: 500m
+            requests:
+                cpu: 200m
